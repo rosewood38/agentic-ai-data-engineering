@@ -1,0 +1,31 @@
+ Pattern Recognition (VERY IMPORTANT)
+
+When you see:
+
+Clues in question:
+1. "find two numbers"
+2. "sum equals target"
+3. "return indices"
+4. "only one solution"
+
+Immediately think:
+
+ HashMap (complement pattern)
+
+ hashmap = {}
+
+for i in range(len(nums)):
+    complement = target - nums[i]
+
+    if complement in hashmap:
+        return [hashmap[complement], i]
+
+    hashmap[nums[i]] = i
+Most important point is 
+| Problem              | Best Pattern             |
+| -------------------- | ------------------------ |
+| Two Sum              | HashMap ✅                |
+| Subarray Sum = K     | Prefix Sum + HashMap ✅   |
+| Pair with difference | Hashing / Set ✅          |
+| 3Sum                 | Sorting + Two Pointer ⚠️ |  because hash map avoid duplicates becomes messy and Sorting simplifies logic
+| 4Sum                 | Sorting + Two Pointer ⚠️ |  because hash map avoid duplicates becomes messy and Sorting simplifies logic
