@@ -18,3 +18,5 @@ class Solution:
         for i,k in hashmap.items():
             if hashmap[i]>len(nums)//2:
                 return i
+# Time: O(n)
+# Space: O(n)
