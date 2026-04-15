@@ -1,4 +1,4 @@
-# 88. Merge Sorted Array
+# Merge Sorted Array
 # Easy
 # Topics
 # premium lock icon
