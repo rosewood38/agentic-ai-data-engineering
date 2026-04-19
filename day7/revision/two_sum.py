@@ -10,4 +10,6 @@ def two_sum(nums,target):
 
 #if all possible solutions are needed 
 #if only 1st one is need then remove results
+# Time Complexity=o(n)
 
+# 
